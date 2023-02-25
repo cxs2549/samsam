@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react"
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import { Gloock } from "next/font/google"
 const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 
@@ -65,11 +67,12 @@ const Services = () => {
           </div>
           <div></div>
         </div>
-        <div className="relative">
-          <img src="./assets/recipes.jpg" alt="" />
-          <div className="absolute inset-0 bg-black/20"></div>
-          
-        </div>
+        <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false} className="border">
+          <img src="./assets/recipes.jpg" className="h-full" alt="" />
+          <img src="./assets/bread.jpg" className="h-full" alt="" />
+          <img src="./assets/cake.jpg" className="h-full" alt="" />
+          <img src="./assets/green.jpg" alt="" />
+        </Carousel>
       </div>
     </div>
   )

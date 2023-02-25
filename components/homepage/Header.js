@@ -10,7 +10,7 @@ const Header = () => {
       <Link href={`/`}>
         <img src="./assets/logo.png" alt="ss logo" className="w-12" />
       </Link>
-      <Hamburger toggled={isOpen} toggle={setOpen} size={24} />
+      <Hamburger rounded={true} toggled={isOpen} toggle={setOpen} size={24} />
       <Menu open={isOpen} />
     </header>
   )
