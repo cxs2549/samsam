@@ -6,7 +6,7 @@ import { Rotate as Hamburger } from "hamburger-react"
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
   return (
-    <header className="p-4 flex items-center justify-between relative bg-white dark:bg-black">
+    <header className="p-4 flex items-center justify-between relative bg-white dark:bg-black z-50">
       <Link href={`/`}>
         <img src="./assets/logo.png" alt="ss logo" className="w-12" />
       </Link>
@@ -30,7 +30,7 @@ const Menu = ({ open }) => {
   const secondaryItems = ["pricing", "support"]
   return (
     <div
-      className={`absolute w-full left-0 top-full transition-opacity bg-white dark:bg-black duration-300 divide-y px-4 pt-4 ${
+      className={`absolute w-full h-screen left-0 top-full transition-opacity bg-white dark:bg-black duration-300 divide-y px-4 pt-4 ${
         open
           ? "opacity-100 pointer-events-auto"
           : "opacity-0 pointer-events-none"
