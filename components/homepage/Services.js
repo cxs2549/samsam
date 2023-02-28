@@ -67,7 +67,7 @@ const Services = () => {
           </div>
           <div></div>
         </div>
-        <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false} className="border">
+        <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false} className="">
           <img src="./assets/recipes.jpg" className="h-full" alt="" />
           <img src="./assets/bread.jpg" className="h-full" alt="" />
           <img src="./assets/cake.jpg" className="h-full" alt="" />

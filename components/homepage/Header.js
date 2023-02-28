@@ -52,12 +52,12 @@ const Menu = ({ open }) => {
       </ul>
       <ul className="grid gap-1 grid-cols-2 pt-8 w-full items-center justify-between">
         <li className="w-full">
-          <button className="bg-white text-black p-4 w-full font-semibold text-lg hover:invert border rounded">
+          <button className="bg-white text-black dark:bg-neutral-700 dark:border-none dark:text-white p-4 w-full font-semibold text-lg hover:invert border rounded">
             Login
           </button>
         </li>
         <li className="w-full">
-          <button className="bg-white text-black p-4 w-full font-semibold text-lg hover:invert border rounded">
+          <button className="bg-white text-black dark:bg-neutral-700 dark:border-none dark:text-white p-4 w-full font-semibold text-lg hover:invert border rounded">
             Register
           </button>
         </li>
