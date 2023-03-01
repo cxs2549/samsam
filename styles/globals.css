@@ -40,19 +40,17 @@ a {
 #title {
 
   background-size: contain;
-  color: #fff;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  /* color: #fff; */
   padding: 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 h1 {
-  font-size: 3.75rem;
+  font-size: 2.5rem;
   letter-spacing: -2px;
   font-family: sans-serif;
-  /* text-align: center; */
+  text-align: center;
   text-shadow: 0 0 1px rgba(0,0,0,.1);
   margin: 0;
   padding: 0;
