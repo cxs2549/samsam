@@ -44,10 +44,12 @@ a {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 3.75rem;
   letter-spacing: -2px;
   font-family: sans-serif;
   /* text-align: center; */

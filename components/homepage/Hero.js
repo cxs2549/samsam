@@ -9,7 +9,7 @@ const Hero = () => {
           id="title"
           style={{ backgroundImage: 'url("./assets/herobg.png")' }}
         >
-          <h1 className="leading-[.8] font-extrabold">Healthy Living</h1>
+          <h1 className="leading-[.8] font-extrabold">Professional Organzier</h1>
         </div>
         
       </div>
