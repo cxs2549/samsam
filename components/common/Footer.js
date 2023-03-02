@@ -116,8 +116,51 @@ export default function Example() {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-10">
-        <div className="mb-8 text-3xl">
-          <h3 className={[robotoSlab.className]}>samantha sambilè</h3>
+        <div className=" border-gray-200 pb-4 xl:mt-0">
+          <div>
+            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              Subscribe to our newsletter
+            </h3>
+            <p className="mt-2 text-sm dark:text-gray-200">
+              Curated news, articles, and resources, sent to your inbox weekly.
+            </p>
+          </div>
+          <form className="mt-4 sm:flex sm:max-w-md">
+            <label htmlFor="email-address" className="sr-only">
+              Email address
+            </label>
+            <input
+              type="email"
+              name="email-address"
+              id="email-address"
+              autoComplete="email"
+              required
+              className="appearance-none min-w-0 w-full dark:border-neutral-700 border border-gray-300 py-2 px-4 text-base rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400 sm:max-w-xs"
+              placeholder="Enter your email"
+            />
+            <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+              <button
+                type="submit"
+                className="w-full bg-brand border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-semibold text-white focus:outline-none focus:ring-0 "
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+        <div className="mt-8 border-t border-gray-200 py-12  md:items-center md:justify-between">
+          <div className="flex space-x-6 md:order-2">
+            {navigation.social.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-gray-400 hover:dark:text-gray-200"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
         </div>
         <div className="pb-8">
           <div className="grid grid-cols-2 gap-8">
@@ -194,58 +237,11 @@ export default function Example() {
               </div>
             </div>
           </div>
-          
         </div>
-        <div className="border-t border-gray-200 pt-8 xl:mt-0">
-          <div>
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Subscribe to our newsletter
-            </h3>
-            <p className="mt-2 text-sm dark:text-gray-200">
-              Curated news, articles, and resources, sent to your inbox
-              weekly.
-            </p>
-          </div>
-          <form className="mt-4 sm:flex sm:max-w-md">
-            <label htmlFor="email-address" className="sr-only">
-              Email address
-            </label>
-            <input
-              type="email"
-              name="email-address"
-              id="email-address"
-              autoComplete="email"
-              required
-              className="appearance-none min-w-0 w-full dark:border-neutral-700 border border-gray-300 py-2 px-4 text-base rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400 sm:max-w-xs"
-              placeholder="Enter your email"
-            />
-            <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-              <button
-                type="submit"
-                className="w-full bg-blue-400 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-semibold text-white focus:outline-none focus:ring-0 "
-              >
-                Subscribe
-              </button>
-            </div>
-          </form>
-        </div>
-        <div className="mt-8 border-t border-gray-200 pt-8  md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2">
-            {navigation.social.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-400 hover:dark:text-gray-200"
-              >
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
-          </div>
-          <p className="mt-8 text-xs text-gray-400 md:order-1">
-            &copy; 2023 CSD for Samantha Sambilè, LLC. All rights reserved.
-          </p>
-        </div>
+
+        <p className="mt-8 text-xs text-gray-400 md:order-1">
+          &copy; 2023 CSD for Samantha Sambilè, LLC. All rights reserved.
+        </p>
       </div>
     </footer>
   )

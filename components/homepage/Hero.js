@@ -3,21 +3,14 @@ import { Dancing_Script } from "next/font/google"
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" })
 const Hero = () => {
   return (
-    <div className="mb-8 relative bg-white dark:bg-black z-40">
-      <img src="./assets/sam.png" alt="" />
-      <div class="container px-4 pt-8">
+    <div className="mb-8 bg-white dark:bg-black z-20 overflow-hidden px-4">
+      <img src="./assets/sam.png" alt="" className="rounded-t" />
+      <div class="container px-4 pt-8 bg-pink-50 dark:bg-neutral-800 rounded-b">
         <div id="title">
-          <div className="h-[200px] dark:text-white">
-            <h1 className={`${dancingScript.className}`}>Professional</h1>
-            <div className="-translate-y-6">
-              <h1 className={dancingScript.className}>Organizer</h1>
-            </div>
-            <div className="-translate-y-10">
-              <h1 className={dancingScript.className}>&</h1>
-            </div>
-            <div className="-translate-y-14">
-              <h1 className={dancingScript.className}>Life Coach</h1>
-            </div>
+          <div className="h-[100px] dark:text-white">
+            <h1 className={`${dancingScript.className}`}>Professional Organizer</h1>
+            
+           
           </div>
         </div>
       </div>

@@ -6,15 +6,28 @@ import { Rotate as Hamburger } from "hamburger-react"
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
   return (
-    <div>
-      <header className="p-4 flex items-center justify-between relative bg-white dark:bg-black z-10">
-        <Link href={`/`} className="absolute left-1/2 -translate-x-1/2 rounded-b overflow-hidden">
-          <img src="./assets/logopink.png" alt="ss logo" className=" hidden dark:block" />
-          <img src="./assets/logopink.png" alt="ss logo" className=" dark:hidden rounded-b" />
+    <div className="">
+      <header className="p-4 flex items-center justify-between relative bg-white dark:bg-black z-10 ">
+        <Link
+          href={`/`}
+          className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
+        >
+          
+          <img
+            src="./assets/logopink.png"
+            alt="ss logo"
+            className=""
+          />
         </Link>
-        <Hamburger rounded={true} toggled={isOpen} toggle={setOpen} size={24} color="#FFC6E1" />
+        <Hamburger
+          rounded={true}
+          toggled={isOpen}
+          toggle={setOpen}
+          size={24}
+          color="#FFC6E1"
+        />
+      <Menu open={isOpen} />
       </header>
-        <Menu open={isOpen} />
     </div>
   )
 }
@@ -33,7 +46,7 @@ const Menu = ({ open }) => {
   const secondaryItems = ["pricing", "support"]
   return (
     <div
-      className={`absolute w-full h-screen left-0 top-full transition-opacity bg-white dark:bg-black duration-300 divide-y px-4 pt-4 w-50 ${
+      className={`absolute w-full h-screen left-0 top-full transition-opacity bg-white dark:bg-black duration-300 divide-y px-4 pt-4 w-50 z-50 ${
         open
           ? "opacity-100 pointer-events-auto"
           : "opacity-0 pointer-events-none"

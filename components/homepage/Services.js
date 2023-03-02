@@ -2,8 +2,8 @@
 import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import { Gloock } from "next/font/google"
-const gloock = Gloock({ subsets: ["latin"], weight: "400" })
+import { Cormorant } from "next/font/google"
+const gloock = Cormorant({ subsets: ["latin"], weight: "500" })
 
 const Services = () => {
   return (
@@ -26,7 +26,7 @@ const Services = () => {
             <button className="text-white font-semibold border rounded-full h-10 px-5">
               Learn more
             </button>
-            <button className="bg-blue-400 rounded-full h-10 px-5 font-semibold text-white">
+            <button className="bg-brand rounded-full h-10 px-5 font-semibold text-white">
               Pricing &rarr;
             </button>
           </div>
@@ -50,7 +50,7 @@ const Services = () => {
             <button className="text-white font-semibold border rounded-full h-10 px-5">
               Learn more
             </button>
-            <button className="bg-blue-400 rounded-full h-10 px-5 font-semibold text-white">
+            <button className="bg-brand rounded-full h-10 px-5 font-semibold text-white">
               Pricing &rarr;
             </button>
           </div>
