@@ -3,13 +3,24 @@ import Link from "next/link"
 import { useState } from "react"
 import { Rotate as Hamburger } from "hamburger-react"
 import Headroom from "react-headroom"
+import { Cormorant } from "next/font/google"
+const cormorant = Cormorant({ subsets: ["latin"], weight: "400" })
+
+const menuItems = [
+  "professional organizing",
+  "personal growth",
+  "lifestyle",
+  "healthy living",
+  "recipes",
+  "resources",
+]
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
   return (
     <Headroom>
-      <div className="z-50">
-        <header className="p-4 flex items-center justify-between relative bg-white dark:bg-black z-10">
+      <header className="z-50">
+        <div className="p-4 flex items-center justify-between relative dark:bg-black z-10">
           <Link
             href={`/`}
             className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
@@ -28,8 +39,17 @@ const Header = () => {
             color="#FFC6E1"
           />
           <Menu open={isOpen} />
-        </header>
-      </div>
+        </div>
+        <div className="px-4 hidden sm:block">
+          <ul className="flex justify-between max-w-4xl mx-auto">
+            {menuItems.map((item) => (
+              <li key={item} className="capitalize">
+                <p className={cormorant.className}>{item}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </header>
     </Headroom>
   )
 }
@@ -37,14 +57,6 @@ const Header = () => {
 export default Header
 
 const Menu = ({ open }) => {
-  const menuItems = [
-    "professional organizing",
-    "personal growth",
-    "lifestyle",
-    "healthy living",
-    "recipes",
-    "resources",
-  ]
   const secondaryItems = ["pricing", "support"]
   return (
     <div
@@ -68,18 +80,7 @@ const Menu = ({ open }) => {
           </li>
         ))}
       </ul>
-      <ul className="grid gap-1 grid-cols-2 pt-8 w-full items-center justify-between">
-        <li className="w-full">
-          <button className="bg-white text-black dark:bg-neutral-700 dark:border-none dark:text-white p-4 w-full font-semibold text-lg hover:invert border rounded">
-            Login
-          </button>
-        </li>
-        <li className="w-full">
-          <button className="bg-white text-black dark:bg-neutral-700 dark:border-none dark:text-white p-4 w-full font-semibold text-lg hover:invert border rounded">
-            Register
-          </button>
-        </li>
-      </ul>
+     
     </div>
   )
 }

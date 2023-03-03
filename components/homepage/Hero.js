@@ -2,7 +2,6 @@
 import React from "react"
 import { SiTiktok } from "react-icons/si"
 import { AiFillYoutube, AiFillInstagram } from "react-icons/ai"
-import { FaFacebookF } from "react-icons/fa"
 import { BsPinterest } from "react-icons/bs"
 import { Dancing_Script, Cormorant } from "next/font/google"
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" })
@@ -10,13 +9,13 @@ const cormorant = Cormorant({ subsets: ["latin"], weight: "400" })
 const Hero = () => {
   return (
     <div className="flex flex-wrap px-4 py-8 gap-2 z-0 border-b dark:border-neutral-700">
-      <div className="flex-1 flex gap-2 ">
+      <div className="flex-1 flex gap-3 ">
         <div className="flex flex-col gap-2 justify-end">
           <div className="flex flex-col">
             <img
               src="./assets/sam.png"
               alt=""
-              className="rounded-full w-24 h-24 object-cover"
+              className="rounded-full w-20 h-20 object-cover"
             />
             <div className="">
               <h1 className={dancingScript.className}>
@@ -35,7 +34,7 @@ const Hero = () => {
         <div className="h-full flex-1">
           <img
             src="./assets/pinkcloset.jpg"
-            className="h-[200px] sm:h-[300px] w-full object-cover object-left rounded"
+            className="h-[200px] sm:h-[300px] w-full object-cover object-left-top rounded"
             alt=""
           />
         </div>
@@ -56,7 +55,7 @@ const Hero = () => {
             className="rounded h-full w-full object-cover"
           />
           <img
-            src="./assets/anothercloset.jpg"
+            src="./assets/desktop.jpg"
             className="h-full w-full object-cover rounded"
             alt=""
           />
