@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <Headroom>
       <header className="z-50">
-        <div className="p-4 flex items-center justify-between relative dark:bg-black z-10">
+        <div className="p-4 flex items-center justify-between bg-white relative dark:bg-black z-10">
           <Link
             href={`/`}
             className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
