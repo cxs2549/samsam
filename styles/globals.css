@@ -50,7 +50,7 @@ h1 {
   text-shadow: 0 0 1px rgba(0,0,0,.1);
   margin: 0;
   padding: 0;
-  @apply text-pink-400 dark:text-brand text-[8vw]
+  @apply text-pink-400 dark:text-brand text-2xl xl:text-3xl
 }
 
 

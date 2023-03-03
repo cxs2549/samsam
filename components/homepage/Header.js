@@ -7,7 +7,7 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false)
   return (
     <div className="">
-      <header className="p-4 flex items-center justify-between relative bg-white dark:bg-black z-10 ">
+      <header className="p-4 flex items-center justify-between relative bg-white dark:bg-black z-10">
         <Link
           href={`/`}
           className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
@@ -16,7 +16,7 @@ const Header = () => {
           <img
             src="./assets/logopink.png"
             alt="ss logo"
-            className="max-w-[250px] transition-all duration-150 sm:max-w-[270px]"
+            className="max-w-[150px] transition-all duration-150 sm:max-w-[180px]"
           />
         </Link>
         <Hamburger
@@ -46,7 +46,7 @@ const Menu = ({ open }) => {
   const secondaryItems = ["pricing", "support"]
   return (
     <div
-      className={`absolute w-full h-screen left-0 top-full transition-opacity bg-white dark:bg-black duration-300 divide-y px-4 pt-4 w-50 z-50 ${
+      className={`absolute w-full h-screen left-0 top-full transition-opacity bg-white dark:bg-black duration-300 divide-y dark:divide-neutral-700 px-4 pt-4 w-50 z-50 ${
         open
           ? "opacity-100 pointer-events-auto"
           : "opacity-0 pointer-events-none"
