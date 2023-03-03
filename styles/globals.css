@@ -53,4 +53,7 @@ h1 {
   @apply text-pink-400 dark:text-brand text-xl sm:text-2xl xl:text-3xl
 }
 
+#mobileNav li {
+  @apply capitalize text-neutral-600
+}
 

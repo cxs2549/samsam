@@ -8,59 +8,9 @@ const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" })
 const cormorant = Cormorant({ subsets: ["latin"], weight: "400" })
 const Hero = () => {
   return (
-    <div className="flex flex-wrap px-4 py-8 gap-2 z-0 border-b dark:border-neutral-700">
-      <div className="flex-1 flex gap-3 ">
-        <div className="flex flex-col gap-2 justify-end">
-          <div className="flex flex-col">
-            <img
-              src="./assets/sam.png"
-              alt=""
-              className="rounded-full w-20 h-20 object-cover"
-            />
-            <div className="">
-              <h1 className={dancingScript.className}>
-                Professional Organizer
-              </h1>
-              <p className={cormorant.className}>Los Angeles, CA</p>
-              <div className="flex text-brand justify-between">
-                <AiFillYoutube size={24} />
-                <BsPinterest size={24} />
-                <AiFillInstagram size={24} />
-                <SiTiktok size={24} />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="h-full flex-1">
-          <img
-            src="./assets/pinkcloset.jpg"
-            className="h-[200px] sm:h-[300px] w-full object-cover object-left-top rounded"
-            alt=""
-          />
-        </div>
-      </div>
-
-      <div className="flex-1 hidden sm:block rounded overflow-hidden h-[200px] sm:h-[300px]">
-        <div>
-          <img
-            src="./assets/closet.png"
-            className="h-[60px] w-full object-cover object-top rounded"
-            alt=""
-          />
-        </div>
-        <div className="grid grid-cols-2 gap-2 h-full mt-2 rounded overflow-hidden">
-          <img
-            src="./assets/vanity.jpg"
-            alt=""
-            className="rounded h-full w-full object-cover"
-          />
-          <img
-            src="./assets/desktop.jpg"
-            className="h-full w-full object-cover rounded"
-            alt=""
-          />
-        </div>
-      </div>
+    <div className="py-8 gap-2 z-0 border-b dark:border-neutral-700">
+      <img src="./assets/flowers.jpg" alt="" />
+      
     </div>
   )
 }

@@ -2,9 +2,12 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Rotate as Hamburger } from "hamburger-react"
+import { SiTiktok } from "react-icons/si"
+import { AiFillYoutube, AiFillInstagram } from "react-icons/ai"
+import { BsPinterest } from "react-icons/bs"
 import Headroom from "react-headroom"
 import { Cormorant } from "next/font/google"
-const cormorant = Cormorant({ subsets: ["latin"], weight: "400" })
+const cormorant = Cormorant({ subsets: ["latin"], weight: "600" })
 
 const menuItems = [
   "professional organizing",
@@ -20,7 +23,15 @@ const Header = () => {
   return (
     <Headroom>
       <header className="z-50">
-        <div className="p-4 flex items-center justify-between bg-white relative dark:bg-black z-10">
+        <div className="px-4 pt-4">
+          <div className="flex text-brand justify-end gap-4">
+            <AiFillYoutube size={22} />
+            <BsPinterest size={22} />
+            <AiFillInstagram size={22} />
+            <SiTiktok size={22} />
+          </div>
+        </div>
+        <div className="px-4 py-2 flex items-center justify-between relative dark:bg-black z-10">
           <Link
             href={`/`}
             className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
@@ -36,7 +47,7 @@ const Header = () => {
             toggled={isOpen}
             toggle={setOpen}
             size={24}
-            color="#FFC6E1"
+            color="#E994AE"
           />
           <Menu open={isOpen} />
         </div>
@@ -47,6 +58,19 @@ const Header = () => {
                 <p className={cormorant.className}>{item}</p>
               </li>
             ))}
+          </ul>
+        </div>
+        <div className="flex justify-center items-center">
+          <ul className="grid grid-cols-3 gap-2 relative" id="mobileNav">
+            <li className=" ml-24 relative">
+              <p className={cormorant.className}>home </p>
+            </li>
+            <li className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+              <p className={cormorant.className}>organization</p>
+            </li>
+            <li className="ml-28">
+              <p className={cormorant.className}>lifestyle</p>
+            </li>
           </ul>
         </div>
       </header>
@@ -80,7 +104,6 @@ const Menu = ({ open }) => {
           </li>
         ))}
       </ul>
-     
     </div>
   )
 }
