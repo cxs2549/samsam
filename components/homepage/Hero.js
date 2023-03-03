@@ -1,11 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react"
+import { SiTiktok } from "react-icons/si"
+import { AiFillYoutube, AiFillInstagram } from "react-icons/ai"
+import { FaFacebookF } from "react-icons/fa"
+import { BsPinterest } from "react-icons/bs"
 import { Dancing_Script, Cormorant } from "next/font/google"
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" })
 const cormorant = Cormorant({ subsets: ["latin"], weight: "400" })
 const Hero = () => {
   return (
-    <div className="flex flex-wrap px-4 py-8 gap-2 sticky top-0 z-0 border-b">
+    <div className="flex flex-wrap px-4 py-8 gap-2 z-0 border-b">
       <div className="flex-1 flex gap-2 ">
         <div className="flex flex-col gap-2 justify-end">
           <div className="flex flex-col">
@@ -19,6 +23,12 @@ const Hero = () => {
                 Professional Organizer
               </h1>
               <p className={cormorant.className}>Los Angeles, CA</p>
+              <div className="flex text-brand justify-between">
+                <AiFillYoutube size={24} />
+                <BsPinterest size={24} />
+                <AiFillInstagram size={24} />
+                <SiTiktok size={24} />
+              </div>
             </div>
           </div>
         </div>
@@ -40,16 +50,18 @@ const Hero = () => {
           />
         </div>
         <div className="grid grid-cols-2 gap-2 h-full mt-2 rounded overflow-hidden">
-          <img src="./assets/vanity.jpg" alt="" className="rounded h-full w-full object-cover" />
+          <img
+            src="./assets/vanity.jpg"
+            alt=""
+            className="rounded h-full w-full object-cover"
+          />
           <img
             src="./assets/anothercloset.jpg"
             className="h-full w-full object-cover rounded"
             alt=""
           />
         </div>
-       
       </div>
-      
     </div>
   )
 }
