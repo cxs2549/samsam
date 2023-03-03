@@ -148,7 +148,7 @@ export default function Example() {
             </div>
           </form>
         </div>
-        <div className="mt-8 border-t border-gray-200 py-12  md:items-center md:justify-between">
+        <div className="mt-8 border-t border-gray-200 py-12  md:items-center md:justify-between dark:border-neutral-700">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
               <a
@@ -162,84 +162,9 @@ export default function Example() {
             ))}
           </div>
         </div>
-        <div className="pb-8">
-          <div className="grid grid-cols-2 gap-8">
-            <div className="md:grid  md:gap-8">
-              <div>
-                <h3 className="text-sm text-gray-400 font-semibold  tracking-wider uppercase">
-                  Explore
-                </h3>
-                <ul role="list" className="mt-4 space-y-3">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm dark:text-gray-200 "
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Food
-                </h3>
-                <ul role="list" className="mt-4 space-y-3">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm dark:text-gray-200 "
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid  md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  DIY
-                </h3>
-                <ul role="list" className="mt-4 space-y-3">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm dark:text-gray-200 "
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  SAMANTHA&apos;S BLOG
-                </h3>
-                <ul role="list" className="mt-4 space-y-3">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm dark:text-gray-200 "
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
-        <p className="mt-8 text-xs text-gray-400 md:order-1">
+        <p className="text-xs text-gray-400 md:order-1">
           &copy; 2023 CSD for Samantha Sambilè, LLC. All rights reserved.
         </p>
       </div>

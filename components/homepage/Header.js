@@ -16,7 +16,7 @@ const Header = () => {
           <img
             src="./assets/logopink.png"
             alt="ss logo"
-            className=""
+            className="max-w-[250px] transition-all duration-150 sm:max-w-[270px]"
           />
         </Link>
         <Hamburger

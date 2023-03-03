@@ -7,7 +7,7 @@ import Footer from '../components/common/Footer'
 const HomePage = () => {
   return (
     <div className='antialiased '>
-      <div className="max-w-sm mx-auto">
+      <div className="max-w-6xl mx-auto">
         <Header />
         <Hero />
         <Services />

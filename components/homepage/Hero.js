@@ -1,20 +1,16 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react"
 import { Dancing_Script } from "next/font/google"
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" })
 const Hero = () => {
   return (
-    <div className="mb-8 bg-white dark:bg-black z-20 overflow-hidden px-4">
-      <img src="./assets/sam.png" alt="" className="rounded-t" />
-      <div class="container px-4 pt-8 bg-pink-50 dark:bg-neutral-800 rounded-b">
-        <div id="title">
-          <div className="h-[100px] dark:text-white">
-            <h1 className={`${dancingScript.className}`}>Professional Organizer</h1>
-            
-           
-          </div>
-        </div>
+    <div className="py-8 pb-6 px-4 flex flex-col">
+     <img src="./assets/sam.png" alt="" className="rounded-full w-24 h-24 object-cover bg-green-200" />
+      <div className="">
+        <h1 className={dancingScript.className}>
+          Professional Organizer
+        </h1>
       </div>
-     
     </div>
   )
 }
