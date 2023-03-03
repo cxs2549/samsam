@@ -7,11 +7,11 @@ const gloock = Cormorant({ subsets: ["latin"], weight: "500" })
 
 const Services = () => {
   return (
-    <div className="sm:grid grid-cols-2 gap-x-2 relative z-0 bg-white">
-      <div className=" flex-1 bg-red-200">
-        <div className="pb-8 overflow-hidden bg-white">
-          <div className="relative px-4 py-8 text-center z-10 bg-white">
-            <div className="scale-150">
+    <div className="sm:grid grid-cols-2 gap-x-2 relative z-0 bg-white dark:bg-black">
+      <div className=" flex-1">
+        <div className="pb-8 overflow-hidden bg-white dark:bg-black">
+          <div className="relative px-4 py-8 text-center z-10 bg-white dark:bg-black">
+            <div className="scale-150 dark:bg-black">
               <h3 className={gloock.className}>Home & Office Organization</h3>
             </div>
             <div className="absolute h-[1px] bottom-0 right-4 sm:left-0 bg-neutral-200 dark:bg-neutral-600 w-4/12 sm:w-7/12"></div>
@@ -30,8 +30,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className=" flex-1">
-        <div className="pb-8 overflow-hidden bg-white">
+      <div className="flex-1">
+        <div className="pb-8 overflow-hidden bg-white dark:bg-black">
           <div className="relative px-4 py-8 text-center">
             <div className="absolute h-[1px] sm:hidden top-0 left-4 sm:left-0 sm:right-4 bg-neutral-200 dark:bg-neutral-600 w-1/2 sm:w-full"></div>
             <div className="scale-150">
@@ -53,8 +53,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className=" flex-1 bg-white w-full">
-        <div className="pb-8 overflow-hidden bg-white">
+      <div className=" flex-1 bg-white dark:bg-black w-full">
+        <div className="pb-8 overflow-hidden bg-white dark:bg-black">
           <div className="relative px-4 py-8 text-center">
             <div className="absolute h-[1px] top-0 left-4 bg-neutral-200 dark:bg-neutral-600 w-1/2"></div>
             <div className="scale-150">
