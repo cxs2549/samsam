@@ -11,7 +11,6 @@ const Services = () => {
       <div className=" flex-1 bg-red-200">
         <div className="pb-8 overflow-hidden bg-white">
           <div className="relative px-4 py-8 text-center z-10 bg-white">
-            
             <div className="scale-150">
               <h3 className={gloock.className}>Home & Office Organization</h3>
             </div>
@@ -42,7 +41,7 @@ const Services = () => {
           </div>
         </div>
         <div className="relative">
-          <img src="./assets/growth.jpg" alt="" className="h-full object-cover" />
+          <img src="./assets/growth.jpg" alt="growth" className=" object-cover" />
           <div className="absolute inset-0 bg-neutral-400/20"></div>
           <div className="absolute bottom-6 flex items-end grid-cols-2 h-full w-full justify-center gap-2">
             <button className="text-white font-semibold border rounded-full h-10 px-5">
