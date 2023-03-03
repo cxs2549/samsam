@@ -30,7 +30,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="mb-8 sm:mb-0 flex-1">
+      <div className=" flex-1">
         <div className="pb-8 overflow-hidden bg-white">
           <div className="relative px-4 py-8 text-center">
             <div className="absolute h-[1px] sm:hidden top-0 left-4 sm:left-0 sm:right-4 bg-neutral-200 dark:bg-neutral-600 w-1/2 sm:w-full"></div>
