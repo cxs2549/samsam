@@ -6,8 +6,8 @@ const cormorant = Cormorant({ subsets: ["latin"], weight: "400" })
 const Hero = () => {
   return (
     <div className="flex flex-wrap px-4 py-8 gap-2">
-      <div className="flex-1 flex gap-2">
-        <div className="flex flex-col gap-2">
+      <div className="flex-1 flex gap-2 border-red-400">
+        <div className="flex flex-col gap-2 justify-end">
           <div className="flex flex-col">
             <img
               src="./assets/sam.png"
@@ -25,13 +25,13 @@ const Hero = () => {
         <div className="h-full flex-1">
           <img
             src="./assets/pinkcloset.jpg"
-            className="h-full w-full object-cover object-left rounded"
+            className="h-[200px] sm:h-[300px] w-full object-cover object-top rounded"
             alt=""
           />
         </div>
       </div>
 
-      <div className="flex-1 hidden sm:block rounded overflow-hidden">
+      <div className="flex-1 hidden sm:block rounded overflow-hidden h-[200px] sm:h-[300px]">
         <div>
           <img
             src="./assets/closet.png"
@@ -40,7 +40,7 @@ const Hero = () => {
           />
         </div>
         <div className="grid grid-cols-2 gap-2 mt-2">
-          <img src="./assets/vanity.png" alt="" className="rounded h-full object-cover" />
+          <img src="./assets/vanity.jpg" alt="" className="rounded h-full object-cover" />
           <img
             src="./assets/anothercloset.jpg"
             className="h-full w-full object-cover rounded"
@@ -48,7 +48,7 @@ const Hero = () => {
           />
         </div>
         <div>
-          <img src="./assets/closet.png" className="w-full object-cover object-bottom h-[100px] mt-2 rounded" alt="" />
+          <img src="./assets/closet.png" className="w-full object-cover object-bottom rounded" alt="" />
         </div>
       </div>
       
