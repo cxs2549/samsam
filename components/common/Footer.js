@@ -109,13 +109,13 @@ const navigation = {
 export default function Example() {
   return (
     <footer
-      className="bg-white dark:bg-neutral-900 dark:border-neutral-700"
+      className="bg-white dark:bg-neutral-900 dark:border-neutral-700 border-t"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-10">
+      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-10 bg-white relative z-10">
         <div className=" border-gray-200 pb-4 xl:mt-0">
           <div>
             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">

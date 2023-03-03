@@ -2,33 +2,35 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Rotate as Hamburger } from "hamburger-react"
+import Headroom from "react-headroom"
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
   return (
-    <div className="">
-      <header className="p-4 flex items-center justify-between relative bg-white dark:bg-black z-10">
-        <Link
-          href={`/`}
-          className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
-        >
-          
-          <img
-            src="./assets/logopink.png"
-            alt="ss logo"
-            className="max-w-[150px] transition-all duration-150 sm:max-w-[180px]"
+    <Headroom>
+      <div className="z-50">
+        <header className="p-4 flex items-center justify-between relative bg-white dark:bg-black z-10">
+          <Link
+            href={`/`}
+            className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
+          >
+            <img
+              src="./assets/logopink.png"
+              alt="ss logo"
+              className="max-w-[150px] transition-all duration-150 sm:max-w-[180px]"
+            />
+          </Link>
+          <Hamburger
+            rounded={true}
+            toggled={isOpen}
+            toggle={setOpen}
+            size={24}
+            color="#FFC6E1"
           />
-        </Link>
-        <Hamburger
-          rounded={true}
-          toggled={isOpen}
-          toggle={setOpen}
-          size={24}
-          color="#FFC6E1"
-        />
-      <Menu open={isOpen} />
-      </header>
-    </div>
+          <Menu open={isOpen} />
+        </header>
+      </div>
+    </Headroom>
   )
 }
 

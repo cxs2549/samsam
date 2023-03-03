@@ -7,11 +7,11 @@ const gloock = Cormorant({ subsets: ["latin"], weight: "500" })
 
 const Services = () => {
   return (
-    <div className="sm:grid grid-cols-2 gap-2">
-      <div className="mb-8 flex-1">
-        <div className="pb-8 overflow-hidden">
-          <div className="relative px-4 py-12 text-center">
-            <div className="absolute h-[1px] top-0 left-4 bg-neutral-200 dark:bg-neutral-600 w-1/2 sm:w-full"></div>
+    <div className="sm:grid grid-cols-2 gap-x-2 relative z-0 bg-white">
+      <div className=" flex-1 bg-red-200">
+        <div className="pb-8 overflow-hidden bg-white">
+          <div className="relative px-4 py-8 text-center z-10 bg-white">
+            
             <div className="scale-150">
               <h3 className={gloock.className}>Home & Office Organization</h3>
             </div>
@@ -19,7 +19,7 @@ const Services = () => {
           </div>
         </div>
         <div className="relative">
-          <img src="./assets/slide1.jpg" alt="" />
+          <img src="./assets/living.jpg" alt="" />
           <div className="absolute inset-0 bg-neutral-400/10"></div>
           <div className="absolute bottom-6 flex items-end justify-center gap-2 h-full w-full">
             <button className="text-white font-semibold border rounded-full h-10 px-5">
@@ -31,19 +31,18 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="mb-8 flex-1">
-        <div className="pb-8 overflow-hidden">
-          <div className="relative px-4 py-12 text-center">
-            <div className="absolute h-[1px] top-0 left-4 sm:left-0 sm:right-4 bg-neutral-200 dark:bg-neutral-600 w-1/2 sm:w-full"></div>
+      <div className="mb-8 sm:mb-0 flex-1">
+        <div className="pb-8 overflow-hidden bg-white">
+          <div className="relative px-4 py-8 text-center">
+            <div className="absolute h-[1px] sm:hidden top-0 left-4 sm:left-0 sm:right-4 bg-neutral-200 dark:bg-neutral-600 w-1/2 sm:w-full"></div>
             <div className="scale-150">
               <h3 className={gloock.className}>Personal Growth</h3>
             </div>
             <div className="absolute h-[1px] bottom-0 right-4 bg-neutral-200 dark:bg-neutral-600 w-4/12 sm:w-7/12"></div>
           </div>
-          <div></div>
         </div>
         <div className="relative">
-          <img src="./assets/growth.jpg" alt="" />
+          <img src="./assets/growth.jpg" alt="" className="h-full object-cover" />
           <div className="absolute inset-0 bg-neutral-400/20"></div>
           <div className="absolute bottom-6 flex items-end grid-cols-2 h-full w-full justify-center gap-2">
             <button className="text-white font-semibold border rounded-full h-10 px-5">
@@ -55,9 +54,9 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className=" flex-1">
-        <div className="pb-8 overflow-hidden">
-          <div className="relative px-4 py-12 text-center">
+      <div className=" flex-1 bg-white w-full">
+        <div className="pb-8 overflow-hidden bg-white">
+          <div className="relative px-4 py-8 text-center">
             <div className="absolute h-[1px] top-0 left-4 bg-neutral-200 dark:bg-neutral-600 w-1/2"></div>
             <div className="scale-150">
               <h3 className={gloock.className}>Recipes</h3>

@@ -5,8 +5,8 @@ const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" })
 const cormorant = Cormorant({ subsets: ["latin"], weight: "400" })
 const Hero = () => {
   return (
-    <div className="flex flex-wrap px-4 py-8 gap-2">
-      <div className="flex-1 flex gap-2 border-red-400">
+    <div className="flex flex-wrap px-4 py-8 gap-2 sticky top-0 z-0 border-b">
+      <div className="flex-1 flex gap-2 ">
         <div className="flex flex-col gap-2 justify-end">
           <div className="flex flex-col">
             <img
@@ -39,17 +39,15 @@ const Hero = () => {
             alt=""
           />
         </div>
-        <div className="grid grid-cols-2 gap-2 mt-2">
-          <img src="./assets/vanity.jpg" alt="" className="rounded h-full object-cover" />
+        <div className="grid grid-cols-2 gap-2 h-full mt-2 rounded overflow-hidden">
+          <img src="./assets/vanity.jpg" alt="" className="rounded h-full w-full object-cover" />
           <img
             src="./assets/anothercloset.jpg"
             className="h-full w-full object-cover rounded"
             alt=""
           />
         </div>
-        <div>
-          <img src="./assets/closet.png" className="w-full object-cover object-bottom rounded" alt="" />
-        </div>
+       
       </div>
       
     </div>
