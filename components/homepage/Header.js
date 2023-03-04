@@ -47,7 +47,7 @@ const Header = () => {
             toggled={isOpen}
             toggle={setOpen}
             size={24}
-            color="#E994AE"
+            color="#E37F9D"
           />
           <Menu open={isOpen} />
         </div>
