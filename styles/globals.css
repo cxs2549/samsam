@@ -57,3 +57,7 @@ h1 {
   @apply capitalize text-neutral-500
 }
 
+#heroText p {
+  @apply text-2xl text-neutral-700
+}
+

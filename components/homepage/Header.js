@@ -23,15 +23,15 @@ const Header = () => {
   return (
     <Headroom>
       <header className="z-50">
-        <div className="px-4 pt-4">
-          <div className="flex text-neutral-700 justify-end gap-4">
+        <div className="px-4 pt-4 bg-white dark:bg-black">
+          <div className="flex text-neutral-700 dark:text-neutral-400 justify-end gap-4">
             <AiFillYoutube size={22} />
             <BsPinterest size={22} />
             <AiFillInstagram size={22} />
             <SiTiktok size={22} />
           </div>
         </div>
-        <div className="px-4 py-2 flex items-center justify-between relative dark:bg-black z-10">
+        <div className="px-4 py-3 flex items-center justify-between relative dark:bg-black z-10">
           <Link
             href={`/`}
             className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
@@ -39,19 +39,20 @@ const Header = () => {
             <img
               src="./assets/logo.png"
               alt="ss logo"
-              className="max-w-[120px] transition-all duration-150 sm:max-w-[180px]"
+              className="max-w-[120px] dark:invert transition-all duration-150 sm:max-w-[140px] xl:max-w-[170px]"
             />
           </Link>
-          <Hamburger
-            rounded={true}
-            toggled={isOpen}
-            toggle={setOpen}
-            size={24}
-            color="#000"
-          />
+          <div className="text-neutral-800 dark:text-neutral-400">
+            <Hamburger
+              rounded={true}
+              toggled={isOpen}
+              toggle={setOpen}
+              size={24}
+            />
+          </div>
           <Menu open={isOpen} />
         </div>
-        <div className="px-4 hidden md:block">
+        <div className="px-4 py-2 hidden md:block">
           <ul className="flex justify-between max-w-4xl mx-auto">
             {menuItems.map((item) => (
               <li key={item} className="capitalize">
@@ -60,9 +61,9 @@ const Header = () => {
             ))}
           </ul>
         </div>
-        <div className="flex justify-center items-center">
-          <ul className="grid grid-cols-3 gap-2 relative bg-pink-50 py-2" id="mobileNav">
-            <li className=" ml-24 relative">
+        <div className="flex justify-center bg-pink-50 items-center md:hidden">
+          <ul className="grid grid-cols-3 gap-2 relative max-w-xs  py-2" id="mobileNav">
+            <li className=" ml-16 relative">
               <p className={cormorant.className}>home </p>
             </li>
             <li className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">

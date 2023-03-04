@@ -10,7 +10,7 @@ const Services = () => {
     <div className="sm:grid grid-cols-2 gap-x-2 relative z-0 bg-white dark:bg-black">
       <div className=" flex-1">
         <div className="overflow-hidden bg-white dark:bg-black">
-          <div className="relative px-4 py-8 text-center z-10 bg-white dark:bg-black">
+          <div className="relative px-4 pb-8 text-center z-10 bg-white dark:bg-black">
             <div className="scale-150 dark:bg-black">
               <h3 className={gloock.className}>Home & Office Organization</h3>
             </div>
