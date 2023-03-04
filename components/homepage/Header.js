@@ -24,7 +24,7 @@ const Header = () => {
     <Headroom>
       <header className="z-50">
         <div className="px-4 pt-4">
-          <div className="flex text-brand justify-end gap-4">
+          <div className="flex text-black justify-end gap-4">
             <AiFillYoutube size={22} />
             <BsPinterest size={22} />
             <AiFillInstagram size={22} />
@@ -37,7 +37,7 @@ const Header = () => {
             className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
           >
             <img
-              src="./assets/logopink.png"
+              src="./assets/logo.png"
               alt="ss logo"
               className="max-w-[150px] transition-all duration-150 sm:max-w-[180px]"
             />
@@ -47,11 +47,11 @@ const Header = () => {
             toggled={isOpen}
             toggle={setOpen}
             size={24}
-            color="#E37F9D"
+            color="#000"
           />
           <Menu open={isOpen} />
         </div>
-        <div className="px-4 hidden sm:block">
+        <div className="px-4 hidden md:block">
           <ul className="flex justify-between max-w-4xl mx-auto">
             {menuItems.map((item) => (
               <li key={item} className="capitalize">
