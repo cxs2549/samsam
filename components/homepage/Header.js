@@ -24,7 +24,7 @@ const Header = () => {
     <Headroom>
       <header className="z-50">
         <div className="px-4 pt-4">
-          <div className="flex text-black justify-end gap-4">
+          <div className="flex text-neutral-700 justify-end gap-4">
             <AiFillYoutube size={22} />
             <BsPinterest size={22} />
             <AiFillInstagram size={22} />
@@ -39,7 +39,7 @@ const Header = () => {
             <img
               src="./assets/logo.png"
               alt="ss logo"
-              className="max-w-[150px] transition-all duration-150 sm:max-w-[180px]"
+              className="max-w-[120px] transition-all duration-150 sm:max-w-[180px]"
             />
           </Link>
           <Hamburger
@@ -61,7 +61,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="flex justify-center items-center">
-          <ul className="grid grid-cols-3 gap-2 relative" id="mobileNav">
+          <ul className="grid grid-cols-3 gap-2 relative bg-pink-50 py-2" id="mobileNav">
             <li className=" ml-24 relative">
               <p className={cormorant.className}>home </p>
             </li>

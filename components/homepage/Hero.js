@@ -8,9 +8,9 @@ const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" })
 const cormorant = Cormorant({ subsets: ["latin"], weight: "400" })
 const Hero = () => {
   return (
-    <div className="py-8 gap-2 z-0 border-b dark:border-neutral-700">
+    <div className="pb-8 gap-2 z-0 dark:border-neutral-700">
       <img src="./assets/flowers.jpg" alt="" />
-      
+
     </div>
   )
 }
