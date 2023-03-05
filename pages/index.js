@@ -7,8 +7,8 @@ import About from '../components/homepage/About'
 
 const HomePage = () => {
   return (
-    <div className='antialiased '>
-      <div className="max-w-6xl mx-auto h-screen">
+    <div className='antialiased'>
+      <div className="max-w-5xl mx-auto h-screen">
         <Header />
         <Hero />
         {/* <Services /> */}

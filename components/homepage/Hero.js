@@ -12,7 +12,7 @@ const Hero = () => {
         className="max-h-[500px] w-full object-cover object-bottom"
       />
       <div
-        className="absolute sm:top-8 -top-2 left-0 w-8/12 p-4"
+        className="absolute sm:top-8 -top-2 left-0 w-8/12 md:w-7/12 p-4"
         id="heroText"
       >
         <p className={dancingScript.className}>
