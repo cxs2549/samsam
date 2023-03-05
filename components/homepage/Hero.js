@@ -1,8 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react"
-import { SiTiktok } from "react-icons/si"
-import { AiFillYoutube, AiFillInstagram } from "react-icons/ai"
-import { BsPinterest } from "react-icons/bs"
 import { Dancing_Script, Cormorant } from "next/font/google"
 const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" })
 const cormorant = Cormorant({ subsets: ["latin"], weight: "400" })
@@ -15,7 +12,7 @@ const Hero = () => {
         className="max-h-[500px] w-full object-cover object-bottom"
       />
       <div
-        className="absolute md:top-2 top-0 left-0 w-8/12 p-4"
+        className="absolute sm:top-8 -top-2 left-0 w-8/12 p-4"
         id="heroText"
       >
         <p className={dancingScript.className}>
