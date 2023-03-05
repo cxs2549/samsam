@@ -1,5 +1,5 @@
-import { Cormorant } from "next/font/google"
-const cormorant = Cormorant({ subsets: ["latin"], weight: "500" })
+import { Gloock } from "next/font/google"
+const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 
 const About = () => {
   return (
@@ -8,10 +8,10 @@ const About = () => {
         <img
           src="./assets/sam.png"
           alt=""
-          className="rounded-full h-16 w-16 object-cover"
+          className="rounded-full h-16 w-16 object-cover order-2"
         />
-        <div className="text-3xl uppercase">
-          <h3 className={cormorant.className}>About</h3>
+        <div className="text-2xl uppercase">
+          <h3 className={gloock.className}>About</h3>
         </div>
       </div>
       <div>

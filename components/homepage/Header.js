@@ -6,8 +6,9 @@ import { SiTiktok } from "react-icons/si"
 import { AiFillYoutube, AiFillInstagram } from "react-icons/ai"
 import { BsPinterest } from "react-icons/bs"
 import Headroom from "react-headroom"
-import { Cormorant } from "next/font/google"
+import { Cormorant, Gloock } from "next/font/google"
 const cormorant = Cormorant({ subsets: ["latin"], weight: "600" })
+const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 
 const menuItems = [
   "professional organizing",
@@ -31,7 +32,7 @@ const Header = () => {
             <SiTiktok size={20} />
           </div>
         </div>
-        <div className="px-4 flex items-center justify-between sm:justify-end bg-white relative dark:bg-black z-10 h-16 md:h-20">
+        <div className="px-4 flex items-center justify-between md:justify-end bg-white relative dark:bg-black z-10 h-16 md:h-20">
           <Link
             href={`/`}
             className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
@@ -42,7 +43,7 @@ const Header = () => {
               className="max-w-[120px] dark:invert transition-all duration-150 sm:max-w-[130px] xl:max-w-[150px]"
             />
           </Link>
-          <div className="text-neutral-800 dark:text-neutral-400 sm:hidden">
+          <div className="text-neutral-800 dark:text-neutral-400 md:hidden">
             <Hamburger
               rounded={true}
               toggled={isOpen}
@@ -60,8 +61,8 @@ const Header = () => {
           </div>
         </div>
         </div>
-        <div className="px-4 py-2 hidden sm:block bg-brand">
-          <ul className="flex justify-between max-w-2xl mx-auto">
+        <div className="px-4 py-2 hidden md:block bg-brand">
+          <ul className="flex justify-between max-w-3xl mx-auto">
             {menuItems.map((item) => (
               <li key={item} className="capitalize text-neutral-600">
                 <p className={cormorant.className}>{item}</p>
@@ -69,7 +70,7 @@ const Header = () => {
             ))}
           </ul>
         </div>
-        <div className="flex justify-center bg-pink-50 items-center sm:hidden">
+        <div className="flex justify-center bg-pink-50 items-center md:hidden">
           <ul className="grid grid-cols-3 gap-2 relative max-w-xs  py-2" id="mobileNav">
             <li className=" ml-16 relative">
               <p className={cormorant.className}>home </p>
