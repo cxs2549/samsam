@@ -10,7 +10,7 @@ const HomePage = () => {
       <div className="max-w-6xl mx-auto h-screen">
         <Header />
         <Hero />
-        <Services />
+        {/* <Services /> */}
         <Footer />
       </div>
     </div>

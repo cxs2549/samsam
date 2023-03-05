@@ -115,7 +115,7 @@ export default function Example() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-10 bg-white dark:bg-black relative z-10">
+      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-10 bg-white dark:bg-black">
         <div className=" border-gray-200 pb-4 xl:mt-0">
           <div>
             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
@@ -141,7 +141,7 @@ export default function Example() {
             <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
                 type="submit"
-                className="w-full bg-blue-400 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-semibold text-white focus:outline-none focus:ring-0 "
+                className="w-full bg-brand border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-neutral-700 focus:outline-none focus:ring-0 "
               >
                 Subscribe
               </button>

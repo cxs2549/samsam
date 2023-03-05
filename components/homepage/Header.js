@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <Headroom>
       <header className="z-50">
-        <div className="px-4 pt-4 bg-white dark:bg-black">
+        <div className="px-4 pt-4 bg-white dark:bg-black sm:hidden">
           <div className="flex text-neutral-700 dark:text-neutral-400 justify-end gap-4">
             <AiFillYoutube size={22} />
             <BsPinterest size={22} />
@@ -31,7 +31,7 @@ const Header = () => {
             <SiTiktok size={22} />
           </div>
         </div>
-        <div className="px-4 py-3 flex items-center justify-between relative dark:bg-black z-10">
+        <div className="px-4 flex items-center justify-between sm:justify-end bg-white relative dark:bg-black z-10 h-16 md:h-20">
           <Link
             href={`/`}
             className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
@@ -39,10 +39,10 @@ const Header = () => {
             <img
               src="./assets/logo.png"
               alt="ss logo"
-              className="max-w-[120px] dark:invert transition-all duration-150 sm:max-w-[140px] xl:max-w-[170px]"
+              className="max-w-[120px] dark:invert transition-all duration-150 sm:max-w-[130px] xl:max-w-[150px]"
             />
           </Link>
-          <div className="text-neutral-800 dark:text-neutral-400">
+          <div className="text-neutral-800 dark:text-neutral-400 sm:hidden">
             <Hamburger
               rounded={true}
               toggled={isOpen}
@@ -51,17 +51,25 @@ const Header = () => {
             />
           </div>
           <Menu open={isOpen} />
+          <div className=" bg-white dark:bg-black">
+          <div className="hidden sm:flex text-neutral-700 dark:text-neutral-400 justify-end gap-4">
+            <AiFillYoutube size={22} />
+            <BsPinterest size={22} />
+            <AiFillInstagram size={22} />
+            <SiTiktok size={22} />
+          </div>
         </div>
-        <div className="px-4 py-2 hidden md:block">
-          <ul className="flex justify-between max-w-4xl mx-auto">
+        </div>
+        <div className="px-4 py-2 hidden sm:block bg-brand">
+          <ul className="flex justify-between max-w-2xl mx-auto">
             {menuItems.map((item) => (
-              <li key={item} className="capitalize">
+              <li key={item} className="capitalize text-neutral-600">
                 <p className={cormorant.className}>{item}</p>
               </li>
             ))}
           </ul>
         </div>
-        <div className="flex justify-center bg-pink-50 items-center md:hidden">
+        <div className="flex justify-center bg-pink-50 items-center sm:hidden">
           <ul className="grid grid-cols-3 gap-2 relative max-w-xs  py-2" id="mobileNav">
             <li className=" ml-16 relative">
               <p className={cormorant.className}>home </p>
