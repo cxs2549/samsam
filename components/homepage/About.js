@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Gloock } from "next/font/google"
 const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 
@@ -8,9 +9,9 @@ const About = () => {
         <img
           src="./assets/sam.png"
           alt=""
-          className="rounded-full h-16 w-16 object-cover order-2"
+          className="rounded-full h-20 w-20 object-cover order-2"
         />
-        <div className="text-2xl uppercase">
+        <div className="text-2xl uppercase text-neutral-700">
           <h3 className={gloock.className}>About</h3>
         </div>
       </div>

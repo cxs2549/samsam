@@ -25,7 +25,7 @@ const Header = () => {
     <Headroom>
       <header className="z-50">
         <div className="px-4 pt-4 bg-white dark:bg-black sm:hidden">
-          <div className="flex text-neutral-700 dark:text-neutral-400 justify-end gap-4">
+          <div className="flex text-neutral-600 dark:text-neutral-400 justify-end gap-4">
             <AiFillYoutube size={20} />
             <BsPinterest size={20} />
             <AiFillInstagram size={20} />
@@ -53,7 +53,7 @@ const Header = () => {
           </div>
           <Menu open={isOpen} />
           <div className=" bg-white dark:bg-black">
-          <div className="hidden sm:flex text-neutral-700 dark:text-neutral-400 justify-end gap-4">
+          <div className="hidden sm:flex text-neutral-600 dark:text-neutral-400 justify-end gap-4">
             <AiFillYoutube size={20} />
             <BsPinterest size={20} />
             <AiFillInstagram size={20} />

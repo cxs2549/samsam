@@ -15,8 +15,8 @@ export default function Example() {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-8 px-4 bg-white dark:bg-black">
-        <div className=" border-gray-200 pb-4 xl:mt-0">
-          <div>
+        <div className=" border-gray-200 pb-4 xl:mt-0 sm:flex justify-center gap-4">
+          <div className="">
             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
               Subscribe to our newsletter
             </h3>
@@ -49,7 +49,7 @@ export default function Example() {
         </div>
         <div className="mt-8 border-t border-gray-200 py-12  md:items-center md:justify-between dark:border-neutral-700">
           <div className="">
-          <div className="flex text-neutral-700 dark:text-neutral-400 gap-4">
+          <div className="flex text-neutral-600 dark:text-neutral-400 gap-4">
             <AiFillYoutube size={20} />
             <BsPinterest size={20} />
             <AiFillInstagram size={20} />
