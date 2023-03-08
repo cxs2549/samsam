@@ -8,7 +8,7 @@ const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 export default function Example() {
   return (
     <footer
-      className="bg-white dark:bg-neutral-900 dark:border-neutral-700 border-t"
+      className="bg-white dark:bg-black dark:border-neutral-700 border-t"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
@@ -17,7 +17,7 @@ export default function Example() {
       <div className="max-w-7xl mx-auto py-8 px-4 bg-white dark:bg-black">
         <div className="  pb-4 xl:mt-0  gap-4">
           <div className="">
-            <div className="uppercase text-2xl text-neutral-700">
+            <div className="uppercase text-2xl text-neutral-700 dark:text-neutral-200">
               <h3 className={gloock.className}>newsletter</h3>
             </div>
             <p className="mt-2 text-sm dark:text-gray-200">
@@ -40,7 +40,7 @@ export default function Example() {
             <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
                 type="submit"
-                className="w-full bg-brand border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-neutral-700 focus:outline-none focus:ring-0 "
+                className="w-full bg-brand border border-transparent rounded-md h-12 px-4 flex items-center justify-center text-base font-medium text-neutral-700 focus:outline-none focus:ring-0 "
               >
                 Subscribe
               </button>

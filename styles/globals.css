@@ -58,7 +58,7 @@ h1 {
 }
 
 #heroText p {
-  @apply text-neutral-600 text-2xl;
+  @apply text-neutral-600 text-2xl dark:text-neutral-200;
   /* font-size: 4vw; */
   line-height: 1.2;
 }
