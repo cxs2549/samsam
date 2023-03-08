@@ -1,4 +1,4 @@
-import { SiTiktok } from "react-icons/si"
+import { SiTiktok, SiTwitter } from "react-icons/si"
 import { AiFillYoutube, AiFillInstagram } from "react-icons/ai"
 import { BsPinterest } from "react-icons/bs"
 import { Gloock } from "@next/font/google"
@@ -21,7 +21,7 @@ export default function Example() {
               <h3 className={gloock.className}>newsletter</h3>
             </div>
             <p className="mt-2 text-sm dark:text-gray-200">
-              Curated news, articles, and resources, sent to your inbox weekly.
+              Curated articles, recipes and resources, sent to your inbox weekly.
             </p>
           </div>
           <form className="mt-4 sm:flex sm:max-w-md">
@@ -40,7 +40,7 @@ export default function Example() {
             <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
                 type="submit"
-                className="w-full bg-brand border border-transparent rounded-md h-12 px-4 flex items-center justify-center text-base font-medium text-neutral-700 focus:outline-none focus:ring-0 "
+                className="w-full bg-brand border border-transparent rounded-md h-12 px-4 flex items-center justify-center text-base font-medium text-neutral-700 focus:outline-none focus:ring-0 shadow"
               >
                 Subscribe
               </button>
@@ -53,6 +53,7 @@ export default function Example() {
               <AiFillYoutube size={20} />
               <BsPinterest size={20} />
               <AiFillInstagram size={20} />
+              <SiTwitter size={20} />
               <SiTiktok size={20} />
             </div>
           </div>

@@ -11,7 +11,7 @@ const Hero = () => {
           An organized space offers the liberating potential for healing,
           serenity & rejuvenation
         </p>
-        <button className="bg-brand rounded-md px-6 font-semibold text-neutral-700 h-12 shadow">Work with me</button>
+        <button className="bg-brand rounded-md px-6 font-medium text-neutral-700 h-12 shadow">Work with me</button>
       </div>
       <div className="max-h-[400px] overflow-hidden md:order-2">
         <img src="./assets/hero.jpg" alt="" />
