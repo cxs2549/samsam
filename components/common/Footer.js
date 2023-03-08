@@ -1,9 +1,9 @@
 import { SiTiktok } from "react-icons/si"
 import { AiFillYoutube, AiFillInstagram } from "react-icons/ai"
 import { BsPinterest } from "react-icons/bs"
-import { Roboto_Slab } from "@next/font/google"
-const robotoSlab = Roboto_Slab({ weight: "400", subsets: ["latin"] })
+import { Gloock } from "@next/font/google"
 
+const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 
 export default function Example() {
   return (
@@ -15,11 +15,11 @@ export default function Example() {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-8 px-4 bg-white dark:bg-black">
-        <div className=" border-gray-200 pb-4 xl:mt-0 sm:flex justify-center gap-4">
+        <div className="  pb-4 xl:mt-0  gap-4">
           <div className="">
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Subscribe to our newsletter
-            </h3>
+            <div className="uppercase text-2xl text-neutral-700">
+              <h3 className={gloock.className}>newsletter</h3>
+            </div>
             <p className="mt-2 text-sm dark:text-gray-200">
               Curated news, articles, and resources, sent to your inbox weekly.
             </p>
@@ -47,20 +47,19 @@ export default function Example() {
             </div>
           </form>
         </div>
-        <div className="mt-8 border-t border-gray-200 py-12  md:items-center md:justify-between dark:border-neutral-700">
+        <div className="  py-8  md:items-center md:justify-between dark:border-neutral-700">
           <div className="">
-          <div className="flex text-neutral-600 dark:text-neutral-400 gap-4">
-            <AiFillYoutube size={20} />
-            <BsPinterest size={20} />
-            <AiFillInstagram size={20} />
-            <SiTiktok size={20} />
-          </div>
+            <div className="flex text-neutral-600 dark:text-neutral-400 gap-4">
+              <AiFillYoutube size={20} />
+              <BsPinterest size={20} />
+              <AiFillInstagram size={20} />
+              <SiTiktok size={20} />
+            </div>
           </div>
         </div>
-        
 
         <p className="text-xs text-gray-400 md:order-1">
-          &copy; 2023 CSD for Samantha Sambilè, LLC. All rights reserved.
+          &copy; 2023 cs.dev for Samantha Sambile, LLC. All rights reserved.
         </p>
       </div>
     </footer>

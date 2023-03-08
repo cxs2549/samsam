@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Rotate as Hamburger } from "hamburger-react"
-import { SiTiktok } from "react-icons/si"
+import { SiTiktok, SiTwitter } from "react-icons/si"
 import { AiFillYoutube, AiFillInstagram } from "react-icons/ai"
 import { BsPinterest } from "react-icons/bs"
 import Headroom from "react-headroom"
@@ -29,38 +29,43 @@ const Header = () => {
             <AiFillYoutube size={20} />
             <BsPinterest size={20} />
             <AiFillInstagram size={20} />
+            <SiTwitter size={20} />
             <SiTiktok size={20} />
           </div>
         </div>
-        <div className="px-4 flex items-center justify-between md:justify-end bg-white relative dark:bg-black z-10 h-16 md:h-20">
-          <Link
-            href={`/`}
-            className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
-          >
-            <img
-              src="./assets/logo.png"
-              alt="ss logo"
-              className="max-w-[120px] dark:invert transition-all duration-150 sm:max-w-[130px] xl:max-w-[150px]"
-            />
-          </Link>
-          <div className="text-neutral-800 dark:text-neutral-400 md:hidden">
-            <Hamburger
-              rounded={true}
-              toggled={isOpen}
-              toggle={setOpen}
-              size={24}
-            />
-          </div>
-          <Menu open={isOpen} />
-          <div className=" bg-white dark:bg-black">
-          <div className="hidden sm:flex text-neutral-600 dark:text-neutral-400 justify-end gap-4">
-            <AiFillYoutube size={20} />
-            <BsPinterest size={20} />
-            <AiFillInstagram size={20} />
-            <SiTiktok size={20} />
+
+        <div className="px-4  bg-white relative dark:bg-black z-10  ">
+          <div className="max-w-7xl mx-auto flex items-center  h-16 md:h-20 justify-between md:justify-end">
+            <Link
+              href={`/`}
+              className="absolute left-1/2 -translate-x-1/2  overflow-hidden"
+            >
+              <img
+                src="./assets/logo.png"
+                alt="ss logo"
+                className="max-w-[120px] dark:invert transition-all duration-150 sm:max-w-[130px] xl:max-w-[150px]"
+              />
+            </Link>
+            <div className="text-neutral-800 dark:text-neutral-400 md:hidden">
+              <Hamburger
+                rounded={true}
+                toggled={isOpen}
+                toggle={setOpen}
+                size={24}
+              />
+            </div>
+            <Menu open={isOpen} />
+            <div className=" bg-white dark:bg-black">
+              <div className="hidden sm:flex text-neutral-600 dark:text-neutral-400 justify-end gap-4">
+                <AiFillYoutube size={20} />
+                <BsPinterest size={20} />
+                <AiFillInstagram size={20} />
+                <SiTiktok size={20} />
+              </div>
+            </div>
           </div>
         </div>
-        </div>
+
         <div className="px-4 py-2 hidden md:block bg-brand">
           <ul className="flex justify-between max-w-3xl mx-auto">
             {menuItems.map((item) => (
@@ -70,8 +75,12 @@ const Header = () => {
             ))}
           </ul>
         </div>
+
         <div className="flex justify-center bg-pink-50 items-center md:hidden">
-          <ul className="grid grid-cols-3 gap-2 relative max-w-xs  py-2" id="mobileNav">
+          <ul
+            className="grid grid-cols-3 gap-2 relative max-w-xs  py-2"
+            id="mobileNav"
+          >
             <li className=" ml-16 relative">
               <p className={cormorant.className}>home </p>
             </li>
@@ -83,6 +92,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
+        
       </header>
     </Headroom>
   )

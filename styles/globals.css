@@ -58,8 +58,8 @@ h1 {
 }
 
 #heroText p {
-  @apply text-neutral-600;
-  font-size: 6vw;
+  @apply text-neutral-600 text-2xl;
+  /* font-size: 4vw; */
   line-height: 1.2;
 }
 
