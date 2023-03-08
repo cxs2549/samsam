@@ -4,7 +4,7 @@ const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 
 const About = () => {
   return (
-    <div className="max-w-7xl mx-auto grid grid-cols-2">
+    <div className="max-w-7xl mx-auto grid md:grid-cols-2">
       <div className="p-4 py-8 flex flex-col gap-5 items-center sm:max-w-xl">
         <div className="flex justify-between w-full items-end">
           <img
