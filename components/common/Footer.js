@@ -8,7 +8,7 @@ const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 export default function Example() {
   return (
     <footer
-      className="bg-[#F0EEE2]  dark:border-neutral-700 border-t"
+      className="bg-[#F0EEE2]  d border-t"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">

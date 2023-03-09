@@ -12,12 +12,12 @@ const About = () => {
             alt=""
             className="rounded-full h-20 w-20 object-cover order-2"
           /> */}
-          <div className="text-2xl uppercase text-neutral-700 dark:text-neutral-200">
+          <div className="text-2xl uppercase text-neutral-700 ">
             <h3 className={gloock.className}>About</h3>
           </div>
         </div>
         <div>
-          <p className=" text-neutral-700 dark:text-neutral-200 ml-auto">
+          <p className=" text-neutral-700  ml-auto">
             As a professional organizer, life coach, and grief advocate, I
             leverage my background in fashion to create functional spaces that
             reflect personal style and promote well-being.

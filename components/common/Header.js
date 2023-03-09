@@ -24,8 +24,8 @@ const Header = () => {
   return (
     <Headroom>
       <header className="z-50">
-        <div className="px-4 pt-4 bg-white dark:bg-black sm:hidden">
-          <div className="flex text-neutral-600 dark:text-neutral-400 justify-end gap-4">
+        <div className="px-4 pt-4 bg-white sm:hidden">
+          <div className="flex text-neutral-600  justify-end gap-4">
             <AiFillYoutube size={20} />
             <BsPinterest size={20} />
             <AiFillInstagram size={20} />
@@ -34,7 +34,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="px-4  bg-white relative dark:bg-black z-10  ">
+        <div className="px-4  bg-white relative  z-10  ">
           <div className="max-w-7xl mx-auto flex items-center  h-16 md:h-20 justify-between md:justify-end">
             <Link
               href={`/`}
@@ -43,7 +43,7 @@ const Header = () => {
               <img
                 src="./assets/logo.png"
                 alt="ss logo"
-                className="max-w-[120px] dark:invert transition-all duration-150 sm:max-w-[130px] xl:max-w-[150px]"
+                className="max-w-[120px] transition-all duration-150 sm:max-w-[130px] xl:max-w-[150px]"
               />
             </Link>
             <div className="text-neutral-800 dark:text-neutral-400 md:hidden">
@@ -55,8 +55,8 @@ const Header = () => {
               />
             </div>
             <Menu open={isOpen} />
-            <div className=" bg-white dark:bg-black">
-              <div className="hidden sm:flex text-neutral-600 dark:text-neutral-400 justify-end gap-4">
+            <div className=" bg-white">
+              <div className="hidden sm:flex text-neutral-600 justify-end gap-4">
                 <AiFillYoutube size={20} />
                 <BsPinterest size={20} />
                 <AiFillInstagram size={20} />
