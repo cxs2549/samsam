@@ -5,7 +5,7 @@ const dancingScript = Dancing_Script({ subsets: ["latin"], weight: "400" })
 
 const Hero = () => {
   return (
-    <div className="grid md:grid-cols-2 max-w-7xl mx-auto ">
+    <div className="grid md:grid-cols-2 max-w-7xl mx-auto pb-8 md:pb-0">
       <div className="p-4 order-2 md:order-1 flex flex-col gap-8 justify-center items-center text-center" id="heroText">
         <p className={dancingScript.className}>
           An organized space offers the liberating potential for healing,
