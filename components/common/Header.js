@@ -66,17 +66,17 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="px-4 py-2 hidden md:block bg-brand">
+        <div className="px-4 py-2 hidden md:block bg-[#868475]">
           <ul className="flex justify-between max-w-3xl mx-auto">
             {menuItems.map((item) => (
-              <li key={item} className="capitalize text-neutral-600">
+              <li key={item} className="capitalize text-neutral-200">
                 <p className={cormorant.className}>{item}</p>
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="flex justify-center bg-pink-50 items-center md:hidden">
+        <div className="flex justify-center bg-[#868475] items-center md:hidden">
           <ul
             className="flex gap-4 relative max-w-xs  py-2"
             id="mobileNav"

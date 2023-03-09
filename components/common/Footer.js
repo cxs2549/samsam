@@ -8,13 +8,13 @@ const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 export default function Example() {
   return (
     <footer
-      className="bg-[#E5E1D5]  dark:border-neutral-700 border-t"
+      className="bg-[#F0EEE2]  dark:border-neutral-700 border-t"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-8 px-4 bg-[#E5E1D5] ">
+      <div className="max-w-7xl mx-auto py-8 px-4 bg-[#F0EEE2] ">
        
         <div className="  pb-8  md:items-center md:justify-between dark:border-neutral-700">
           <div className="">

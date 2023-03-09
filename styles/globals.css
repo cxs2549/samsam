@@ -54,7 +54,7 @@ h1 {
 }
 
 #mobileNav li {
-  @apply capitalize text-neutral-600
+  @apply capitalize text-neutral-200
 }
 
 #heroText p {
