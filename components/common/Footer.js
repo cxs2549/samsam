@@ -40,7 +40,7 @@ export default function Example() {
             <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
                 type="submit"
-                className="w-full bg-brand border border-transparent rounded-md h-12 px-4 flex items-center justify-center text-base font-medium text-neutral-700 focus:outline-none focus:ring-0 shadow"
+                className="w-full bg-brand border border-transparent rounded-md h-12 px-6 flex items-center justify-center text-base font-medium text-neutral-700 focus:outline-none focus:ring-0 shadow"
               >
                 Subscribe
               </button>

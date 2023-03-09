@@ -6,8 +6,8 @@ import { SiTiktok, SiTwitter } from "react-icons/si"
 import { AiFillYoutube, AiFillInstagram } from "react-icons/ai"
 import { BsPinterest } from "react-icons/bs"
 import Headroom from "react-headroom"
-import { Cormorant, Gloock } from "next/font/google"
-const cormorant = Cormorant({ subsets: ["latin"], weight: "600" })
+import { Cormorant_Garamond, Gloock } from "next/font/google"
+const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: "600" })
 const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 
 const menuItems = [
@@ -78,16 +78,16 @@ const Header = () => {
 
         <div className="flex justify-center bg-pink-50 items-center md:hidden">
           <ul
-            className="grid grid-cols-3 gap-2 relative max-w-xs  py-2"
+            className="flex gap-4 relative max-w-xs  py-2"
             id="mobileNav"
           >
-            <li className=" ml-16 relative">
+            <li className=" relative">
               <p className={cormorant.className}>home </p>
             </li>
-            <li className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+            <li className="">
               <p className={cormorant.className}>organization</p>
             </li>
-            <li className="ml-28">
+            <li className="">
               <p className={cormorant.className}>lifestyle</p>
             </li>
           </ul>
@@ -104,7 +104,7 @@ const Menu = ({ open }) => {
   const secondaryItems = ["pricing", "support"]
   return (
     <div
-      className={`absolute w-full h-screen left-0 top-full transition-opacity bg-white dark:bg-black duration-300 divide-y dark:divide-neutral-700 px-4 pt-4 w-50 z-50 ${
+      className={`absolute w-full h-screen left-0 top-full transition-opacity bg-white dark:bg-black duration-300 divide-y dark:divide-neutral-700 px-8 pt-4 w-50 z-50 ${
         open
           ? "opacity-100 pointer-events-auto"
           : "opacity-0 pointer-events-none"
