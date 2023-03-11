@@ -8,7 +8,7 @@ const gloock = Gloock({ subsets: ["latin"], weight: "400" })
 export default function Example() {
   return (
     <footer
-      className="bg-[#F0EEE2]  d border-t"
+      className="bg-[#F0EEE2] border-t"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
@@ -18,7 +18,7 @@ export default function Example() {
        
         <div className="  pb-8  md:items-center md:justify-between dark:border-neutral-700">
           <div className="">
-            <div className="flex text-neutral-600 dark:text-neutral-400 gap-4">
+            <div className="flex text-neutral-600 gap-4">
               <AiFillYoutube size={20} />
               <BsPinterest size={20} />
               <AiFillInstagram size={20} />
